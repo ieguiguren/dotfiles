@@ -170,7 +170,7 @@ export PS1='\[\e[32m\][\u@\h]\[\e[0m\]\[\e[37m\][\t]\[\e[0m\]\n\[\e[34m\][\w]\[\
 ## -----------------------
 
 # 2.1) Safety
-set -o noclobber
+#set -o noclobber
 
 # 2.2) Listing, directories, and motion
 alias ls="ls -F --color"
