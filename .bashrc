@@ -173,8 +173,9 @@ export PS1='\[\e[32m\][\u@\h]\[\e[0m\]\[\e[37m\][\t]\[\e[0m\]\n\[\e[34m\][\w]\[\
 #set -o noclobber
 
 # 2.2) Listing, directories, and motion
-alias ls="ls -F --color"
-
+if [ -f $HOME/.bash_aliases ] ; then
+    source $HOME/.bash_aliases
+fi
 
 # 2.3) Text and editor commands
 export EDITOR='vim'
