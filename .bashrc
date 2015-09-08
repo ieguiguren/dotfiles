@@ -1,5 +1,6 @@
 # .bashrc file
 # By Balaji S. Srinivasan (balajis@stanford.edu)
+# Customized by Ivan Eguiguren
 #
 # Concepts:
 #
@@ -196,5 +197,9 @@ export LC_ALL=POSIX
 ## -- 3) User-customized code  --
 ## ------------------------------
 
+## Define the file to host aliasing
+if [ -f ~/.bash_aliases ]; then
+    . ~/.bash_aliases
+fi
 ## Define any user-specific variables you want here.
 source ~/.bashrc_custom
