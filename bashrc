@@ -190,7 +190,8 @@ export GREP_COLOR='1;31' # green for matches
 # Ensures cross-platform sorting behavior of GNU sort.
 # http://www.gnu.org/software/coreutils/faq/coreutils-faq.html#Sort-does-not-sort-in-normal-order_0021
 unset LANG
-export LC_ALL=POSIX
+export LC_ALL="es_ES.UTF-8"
+export LANG="es_ES.UTF-8"
 
 
 
