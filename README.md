@@ -10,5 +10,6 @@ ln -sb {dotfiles/,.}bashrc
 ln -sb {dotfiles/,.}bashrc_custom 
 ln -sb {dotfiles/,.}bash_aliases 
 ln -sb {dotfiles/,.}vimrc 
+ln -sb {dotfiles/,.}vim
 ```
 
