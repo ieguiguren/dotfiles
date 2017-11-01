@@ -1,17 +1,34 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+import sys
+from gui import *
+import argparse
+from ConfigParser import SafeConfigParser
+
 try:
     import 
 except ImportError as e:
-        print ("Error: %s \n" % (e))
-        print("Try this ... pip install -r /path/to/requirements.txt")
+    print ("Error: %s \n" % (e))
+    print("Try this ... pip install -r /path/to/requirements.txt")
+    sys.exit(1)
 
-
+def clParser():
+    ''' None -> parses parameters and returns an array with them '''
+        parser = argparse.ArgumentParser()
+        parser.add_argument('-c','--config', dest="configFile",
+            default='shodanCache.conf', type=str,
+            help='Configuration file. Default:
+            shodanCache.conf')
+        return parser.parse_args()
 
 
 def main():
 
+    TITLE = ''
+    banner(GREEN, TITLE)
+
+    arg = clParser()
 
 if __name__ == "__main__":
     main()
