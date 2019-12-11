@@ -1,2 +1,11 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =0
+let g:netrw_dirhist_cnt =9
+let g:netrw_dirhist_1='/home/xir/dev/allotsecure/backend/services/gateway-isp/api'
+let g:netrw_dirhist_2='/home/xir/dev/allotsecure/backend/services/gateway-isp'
+let g:netrw_dirhist_3='/home/xir/dev/allotsecure/backend/services/gateway-isp/externals'
+let g:netrw_dirhist_4='/home/xir/dev/allotsecure/backend/services/gateway-isp/externals/openapi'
+let g:netrw_dirhist_5='/home/xir/dev/allotsecure/backend/services/gateway-isp/externals/openapi/rest-openapi'
+let g:netrw_dirhist_6='/home/xir/dev/allotsecure/backend/services/gateway-isp/externals/openapi/rest-openapi/reference'
+let g:netrw_dirhist_7='/home/xir/dev/allotsecure/backend/services/gateway-isp/externals/openapi/rest-openapi/reference/allotsecure-isp'
+let g:netrw_dirhist_8='/home/xir/dev/allotsecure/backend/services/gateway-isp/api'
+let g:netrw_dirhist_9='/home/xir/dev/allotsecure/backend/services/api-account/externals/openapi'
