@@ -9,4 +9,4 @@ alias grep="grep --color=auto"
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
 alias ls="ls -lAtr "
 alias cert="echo 'openssl x509 -in cert.pem -text -noout'"
-alias docker_stop="docker ps | awk '{print \$1}' | grep -v CONTAINER | xargs docker stop "
+alias docker_stop="docker ps | grep -v 'router_vpn' | awk '{print \$1}' | grep -v CONTAINER | xargs docker stop "
