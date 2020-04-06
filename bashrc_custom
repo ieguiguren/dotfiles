@@ -18,3 +18,4 @@ echo "    Alt + F Move cursor forward one word on the current line"
 echo "    Alt + B Move cursor backward one word on the current line"
 echo "    Tab Auto-complete files and folder names"
 }
+source /etc/bash_completion.d/docker-machine-prompt.bash

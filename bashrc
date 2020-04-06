@@ -164,7 +164,7 @@ shopt -s histappend
 # Make prompt informative
 # See:  http://www.ukuug.org/events/linux2003/papers/bash_tips/
 #PS1="\[\033[0;34m\][\u@\h:\w]$\[\033[0m\] "
-export PS1='\[\e[32m\][\u@\h]\[\e[0m\]\[\e[37m\][\t]\[\e[0m\]\n\[\e[34m\][\w]\[\e[0m\]>'
+export PS1='\[\e[32m\][\u@\h]\[\e[0m\]\[\e[37m\][\t]\[\e[0m\]\n\[\e[34m\][\w]\[\e[0m\]$(__docker_machine_ps1)> '
 
 ## -----------------------
 ## -- 2) Set up aliases --
@@ -176,6 +176,9 @@ export PS1='\[\e[32m\][\u@\h]\[\e[0m\]\[\e[37m\][\t]\[\e[0m\]\n\[\e[34m\][\w]\[\
 # 2.2) Listing, directories, and motion
 if [ -f $HOME/.bash_aliases ] ; then
     source $HOME/.bash_aliases
+fi
+if [ -f $HOME/.bash_allot ] ; then
+    source $HOME/.bash_allot
 fi
 
 # 2.3) Text and editor commands
